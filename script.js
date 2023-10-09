@@ -1,11 +1,7 @@
 //your code here
-const input = document.createElement("input");
-input.id="input";
-input.setAttribute("type","text");
-document.body.appendChild(input);
 
-let buttons = document.querySelectorAll("button");
-let currentInput = " ";
+
+let currentInput = "";
 
 function UpdateInput(){
 	input.value = currentInput;
@@ -36,7 +32,7 @@ operators.forEach((operator)=>
 	                 )
 
 document.getElementById("clr").addEventListener("click", () =>{
-	            currentInput=" ";
+	            currentInput="";
 	            UpdateInput();
 });
 
